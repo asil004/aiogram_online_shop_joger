@@ -19,7 +19,7 @@ async def start_handler(message: types.Message):
 
 @dp.message_handler()
 async def answer(message: types.Message):
-    await message.reply('Sizni tushunmayabman!')
+    await message.reply('Sizni tushunmayabman!------')
 
 
 if __name__ == '__main__':
