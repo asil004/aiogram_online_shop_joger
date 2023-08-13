@@ -12,14 +12,20 @@ dp = Dispatcher(bot=bot)
 
 
 @dp.message_handler(commands=['start'])
-async def start_handler(message: types.Message):
+async def cmd_start(message: types.Message):
+    await message.answer_sticker('CAACAgIAAxkBAAMhZNjD8pqUKrYugcA5mGEoWtpDZVMAAiUAA7KYmg4PNnd8jpPBLTAE')
     await message.answer(f'Assalomu aleykum {message.from_user.first_name}.\n'
                          f'Online krasovkalar do\'koniga xush kelibsiz!')
 
 
 @dp.message_handler()
 async def answer(message: types.Message):
-    await message.reply('Sizni tushunmayabman!------')
+    await message.reply('Sizni tushunmayabman!')
+
+
+@dp.message_handler(content_types=['sticker'])
+async def sticker(message: types.Message):
+    await message.reply(message.sticker.file_id)
 
 
 if __name__ == '__main__':
