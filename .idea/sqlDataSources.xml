@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="0ed983e6-21f4-4972-a27e-cda681b45b68" name="tg Mapping">
+      <data-sources ddl="1dc1a9f3-eda9-49f1-a0bd-18b611b7619a" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="1dc1a9f3-eda9-49f1-a0bd-18b611b7619a" />
+          <option name="name" value="tg" />
+          <option name="dbmsName" value="SQLITE" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/tg.db" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
